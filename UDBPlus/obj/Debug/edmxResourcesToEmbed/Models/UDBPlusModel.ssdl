@@ -23,27 +23,60 @@
     <Property Name="EmailAddress" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="Ingenierias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Licenciaturas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Maestrias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
+  </EntityType>
   <EntityType Name="Messages">
     <Key>
       <PropertyRef Name="MessageId" />
     </Key>
     <Property Name="MessageId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CName" Type="varchar" MaxLength="50" />
     <Property Name="Message" Type="varchar" MaxLength="250" />
-    <Property Name="EmailId" Type="int" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="MessageTypeId" Type="int" />
   </EntityType>
   <EntityType Name="MessageTypes">
     <Key>
       <PropertyRef Name="MessageTypeId" />
     </Key>
-    <Property Name="MessageTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="MessageType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MessageTypeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tecnicos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="150" />
   </EntityType>
   <EntityContainer Name="UDBInfoDBModelStoreContainer">
     <EntitySet Name="Courses" EntityType="Self.Courses" Schema="Mester" store:Type="Tables" />
     <EntitySet Name="CourseTypes" EntityType="Self.CourseTypes" Schema="Mester" store:Type="Tables" />
     <EntitySet Name="Emails" EntityType="Self.Emails" Schema="Mester" store:Type="Tables" />
+    <EntitySet Name="Ingenierias" EntityType="Self.Ingenierias" Schema="Mester" store:Type="Tables" />
+    <EntitySet Name="Licenciaturas" EntityType="Self.Licenciaturas" Schema="Mester" store:Type="Tables" />
+    <EntitySet Name="Maestrias" EntityType="Self.Maestrias" Schema="Mester" store:Type="Tables" />
     <EntitySet Name="Messages" EntityType="Self.Messages" Schema="Mester" store:Type="Tables" />
     <EntitySet Name="MessageTypes" EntityType="Self.MessageTypes" Schema="Mester" store:Type="Tables" />
+    <EntitySet Name="Tecnicos" EntityType="Self.Tecnicos" Schema="Mester" store:Type="Tables" />
   </EntityContainer>
 </Schema>

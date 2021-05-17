@@ -7,26 +7,26 @@ using UDBPlus.Models;
 
 namespace UDBPlus.Repositories
 {
-    public class CourseTypeRepository
+    public class TecRepository
     {
         private UDBInfoDBEntities objUDBInfoDBEntities;
-        public CourseTypeRepository()
+        public TecRepository()
         {
             objUDBInfoDBEntities = new UDBInfoDBEntities();
         }
 
-        public IEnumerable<SelectListItem> GetAllCourseType()
+        public IEnumerable<SelectListItem> GetAllTec()
         {
-            IEnumerable<SelectListItem> objSelectListItems = new List<SelectListItem>();
-            objSelectListItems = (from obj in objUDBInfoDBEntities.CourseTypes
+            IEnumerable<SelectListItem> tecSelectListItems = new List<SelectListItem>();
+            tecSelectListItems = (from obj in objUDBInfoDBEntities.Tecnicos
                                   select new SelectListItem()
                                   {
-                                      Text = obj.CourseName,
-                                      Value = obj.CourseTypeId.ToString(),
+                                      Text = obj.Name,
+                                      Value = obj.Id.ToString(),
                                       Selected = true
                                   }).ToList();
 
-            return objSelectListItems;
+            return tecSelectListItems;
         }
     }
 }

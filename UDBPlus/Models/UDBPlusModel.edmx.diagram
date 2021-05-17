@@ -10,6 +10,10 @@
         <EntityTypeShape EntityType="UDBInfoDBModel.Message" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="UDBInfoDBModel.MessageType" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="UDBInfoDBModel.CourseType" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="UDBInfoDBModel.Licenciatura" Width="1.5" PointX="5.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UDBInfoDBModel.Maestria" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="UDBInfoDBModel.Tecnico" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="UDBInfoDBModel.Ingenieria" Width="1.5" PointX="4.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

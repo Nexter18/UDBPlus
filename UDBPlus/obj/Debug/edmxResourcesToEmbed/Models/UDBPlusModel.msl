@@ -22,9 +22,10 @@
     <EntitySetMapping Name="Messages">
       <EntityTypeMapping TypeName="UDBInfoDBModel.Message">
         <MappingFragment StoreEntitySet="Messages">
+          <ScalarProperty Name="CName" ColumnName="CName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="MessageId" ColumnName="MessageId" />
           <ScalarProperty Name="Message1" ColumnName="Message" />
-          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
           <ScalarProperty Name="MessageTypeId" ColumnName="MessageTypeId" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -42,6 +43,38 @@
         <MappingFragment StoreEntitySet="CourseTypes">
           <ScalarProperty Name="CourseName" ColumnName="CourseName" />
           <ScalarProperty Name="CourseTypeId" ColumnName="CourseTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Licenciaturas">
+      <EntityTypeMapping TypeName="UDBInfoDBModel.Licenciatura">
+        <MappingFragment StoreEntitySet="Licenciaturas">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Maestrias">
+      <EntityTypeMapping TypeName="UDBInfoDBModel.Maestria">
+        <MappingFragment StoreEntitySet="Maestrias">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tecnicos">
+      <EntityTypeMapping TypeName="UDBInfoDBModel.Tecnico">
+        <MappingFragment StoreEntitySet="Tecnicos">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingenierias">
+      <EntityTypeMapping TypeName="UDBInfoDBModel.Ingenieria">
+        <MappingFragment StoreEntitySet="Ingenierias">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -96,6 +96,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Don bosco\img-1.jpg" />
+    <Content Include="Content\Don bosco\img-2.jpg" />
+    <Content Include="Content\Don bosco\img-3.jpg" />
+    <Content Include="Content\Don bosco\img-4.jpg" />
+    <Content Include="Content\Don bosco\img-5.jpg" />
+    <Content Include="Content\Don bosco\img-6.jpg" />
+    <Content Include="Content\Don bosco\img-7.jpg" />
     <Content Include="Content\JavaScript.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
@@ -127,10 +134,22 @@
     <Compile Include="Models\Email.cs">
       <DependentUpon>UDBPlusModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ingenieria.cs">
+      <DependentUpon>UDBPlusModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Licenciatura.cs">
+      <DependentUpon>UDBPlusModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Maestria.cs">
+      <DependentUpon>UDBPlusModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Message.cs">
       <DependentUpon>UDBPlusModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MessageType.cs">
+      <DependentUpon>UDBPlusModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tecnico.cs">
       <DependentUpon>UDBPlusModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\UDBPlusModel.Context.cs">
@@ -150,9 +169,19 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CourseRepository.cs" />
-    <Compile Include="Repositories\CourseTypeRepository.cs" />
+    <Compile Include="Repositories\IngRepository.cs" />
+    <Compile Include="Repositories\LicRepository.cs" />
+    <Compile Include="Repositories\MasterRepository.cs" />
+    <Compile Include="Repositories\MessageTypeRepository.cs" />
+    <Compile Include="Repositories\TecRepository.cs" />
     <Compile Include="ViewModel\CoursesViewModel.cs" />
     <Compile Include="ViewModel\CourseTypeViewModel.cs" />
+    <Compile Include="ViewModel\IngViewModel.cs" />
+    <Compile Include="ViewModel\LicViewModel.cs" />
+    <Compile Include="ViewModel\MasterViewModel.cs" />
+    <Compile Include="ViewModel\MessageTypeViewModel.cs" />
+    <Compile Include="ViewModel\MessageViewModel.cs" />
+    <Compile Include="ViewModel\TecViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

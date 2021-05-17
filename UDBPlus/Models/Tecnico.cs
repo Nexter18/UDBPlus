@@ -12,12 +12,9 @@ namespace UDBPlus.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Message
+    public partial class Tecnico
     {
-        public int MessageId { get; set; }
-        public string Message1 { get; set; }
-        public Nullable<int> MessageTypeId { get; set; }
-        public string Email { get; set; }
-        public string CName { get; set; }
+        public long Id { get; set; }
+        public string Name { get; set; }
     }
 }

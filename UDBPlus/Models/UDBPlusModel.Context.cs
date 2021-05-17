@@ -30,5 +30,9 @@ namespace UDBPlus.Models
         public virtual DbSet<Message> Messages { get; set; }
         public virtual DbSet<MessageType> MessageTypes { get; set; }
         public virtual DbSet<CourseType> CourseTypes { get; set; }
+        public virtual DbSet<Licenciatura> Licenciaturas { get; set; }
+        public virtual DbSet<Maestria> Maestrias { get; set; }
+        public virtual DbSet<Tecnico> Tecnicos { get; set; }
+        public virtual DbSet<Ingenieria> Ingenierias { get; set; }
     }
 }
